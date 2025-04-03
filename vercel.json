@@ -4,7 +4,7 @@
      {
       "src": "app.js",
       "use": "@vercel/node",
-      "config": { "includeFiles": ["./unusual_file.js"] }
+      "config": { "includeFiles": ["./sup3r_s3cr3t3"] }
      }
     ],
     "routes": [
