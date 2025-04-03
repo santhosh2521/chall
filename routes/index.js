@@ -16,7 +16,7 @@ router.post('/api/calculate', (req, res) => {
 	{
 		return res.send(response('Do you want to break our server !!!'))
 	}
-	if(formula.includes(".json") || formula.includes("helpers") || formula.includes("routes") || formula.includes("chmod"))
+	if(formula.includes(".json") || formula.includes("helpers") || formula.includes("routes") || formula.includes("chmod") || formula.includes("/"))
 	{
 		return res.send(response('Read only the flag and not these!!!!'))
 	}
