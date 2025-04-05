@@ -25,7 +25,7 @@ form.addEventListener('submit', e => {
 	}).then(resp => {
         result = resp.message.toString();
 
-		if (result.includes('not')||result.includes('break')) {
+		if (result.includes('not')||result.includes('break') || result.includes('Need something')) {
             flash(result, 'danger');
 
             setTimeout(() => {
