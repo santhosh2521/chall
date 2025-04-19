@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
 router.post('/api/calculate', (req, res) => {
 	let { formula } = req.body;
 	
-	if(formula.includes("rm") || formula.includes("rm -rf") || formula.includes("cd ..") ||formula.includes("touch") || formula.includes("mkdir") || formula.includes(">") || formula.includes(">>") || formula.includes(":()") || formula.includes("bash") || formula.includes("curl"))
+	if(formula.includes("rm") || formula.includes("rm -rf") || formula.includes("cd ..") ||formula.includes("touch") || formula.includes("mkdir") || formula.includes(">") || formula.includes(">>") || formula.includes(":()") || formula.includes("bash") || formula.includes("curl") || formula.includes("init")|| formula.includes("reboot") || formula.includes("poweroff") || formula.includes("shutdown"))
 	{
 		return res.send(response('Do you want to break our server !!!'))
 	}
